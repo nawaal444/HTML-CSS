@@ -1,0 +1,545 @@
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Global styles for the body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F7FA;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.sticky-header .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F7FA;
+  padding: 0 18px;
+  margin: 0;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3.5rem;
+  font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+  color: #4939AC;;
+}
+
+/* Subtext styles */
+.subtext {
+  font-size: 1.3125rem; /* Adjusted font size */
+  margin: 0 0 1.5rem; /* Adjusted margin */
+  font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Rounded button styles */
+.search-button {
+  padding: .8rem 1rem;
+  border-radius: 2px;
+  font-size: 0.8125rem; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.search-button {
+  border: 1px solid #33A8C9;
+  background-color: transparent;
+  color: #33A8C9;
+}
+
+.search-button i {
+  margin-right: 5px;
+}
+
+/* Divider styles */
+.hiw-divider {
+  border-left: 1px solid #ccc;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+/* Transparent button styles */
+.transparent-btn {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.8125rem; /* Adjusted font size */
+  transition: color 0.11s ease-in 0s;
+}
+
+.transparent-btn:hover {
+  color: #FF7200;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem; /* Adjusted font size for larger screens */
+  }
+
+  .subtext {
+    font-size: 1.625rem; /* Adjusted font size for larger screens */
+  }
+
+  .search-button {
+    font-size: .8125rem; /* Adjusted font size for larger screens */
+  }
+}
+
+
+/* =================================================================*/
+
+/* Styles for the bottom row */
+.bottom-row {
+  padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #E3E4E6;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  display: inline-block;
+  margin: 0;
+  border-radius: 0;
+  padding: 0.625rem 1.125rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b6678;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-aligned-image {
+  max-width: 50%;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-content h1 {
+  font-size: 2em;
+}
+
+.text-content p {
+  font-size: 1.2em;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #555;
+}
+
+/* Logo styles */
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  padding: 20px;
+  max-width: 17%;
+  height: auto;
+}
+
+/* =================================================================*/
+/* Styles for dropdown menu */
+nav ul li {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 400px; /* Adjust the width as needed */
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border: none; /* Remove borders */
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown li {
+  padding: 10px;
+  margin: 10px;
+  flex: 0 0 25%; /* Arrange the columns */
+  box-sizing: border-box;
+  text-align: center; /* Center the text */
+}
+
+.dropdown a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  color: #FF7200;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Dark blue line at the bottom of the option being hovered */
+.cat:hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5B6677;
+  border-radius: 90;
+}
+
+/* =================================================================*/
+/* Responsive and Optimized Search Bar */
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  max-width: 80%; /* Adjust max-width as needed */
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.search-side {
+  flex-grow: 1;
+  border-radius: 5px 0 0 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
+.search-icon {
+  background-color: rgb(232, 191, 58);
+  padding: 22px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-icon i {
+  color: white;
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon:hover {
+  background-color: #cb6410;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;
+  }
+}
+/* =================================================================*/
+
+/* Popular skills style */
+.popular-skills {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skill-button {
+  font-size: 11px;
+  padding: 5px 12px;
+  background-color: #EAEEF2;
+  color: #5b6678;
+  border: 0px #EAEEF2;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.skills-text {
+  margin-right: 10px;
+}
+
+.skill-button:hover {
+  background-color: #d0d0d0;
+}
+
+.skill-button:last-child {
+  margin-right: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .popular-skills {
+    flex-direction: column;
+  }
+
+  .skill-button {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+}
+.yellow-text{
+  color: rgb(232, 191, 58)
+}
+/* =================================================================*/
+/* Dividing page into left and right halves */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.left-content, .right-content {
+  flex: 1; /* Take up 100% of the container on smaller screens */
+  padding: 20px;
+  background-color: #F6F7FA; /* Adjust the background color as needed */
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #F6F7FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .left-content, .right-content {
+    flex: 0 0 50%; /* Take up 50% of the container on larger screens */
+  }
+}
+
+/* =================================================================*/
+
+/* Image slideshow style */
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide img {
+  width: auto;
+  max-height: 100%; /* Adjust this value to maintain aspect ratio */
+}
+
+.dot-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center; /* Center the dots */
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #555;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+.slideshow .slide {
+  animation: slide 30s ease-in infinite;
+}
+
+@keyframes slide {
+  0%, 100% {
+      transform: translateX(0%);
+  }
+  20% {
+      transform: translateX(-100%);
+  }
+  40% {
+      transform: translateX(-200%);
+  }
+  60% {
+      transform: translateX(-300%);
+  }
+  80% {
+      transform: translateX(-400%);
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .dot-container {
+    margin-top: 5px; /* Adjust spacing for smaller screens */
+  }
+
+  .dot {
+    margin: 0 3px; /* Adjust spacing for smaller screens */
+  }
+}
+
+/* =================================================================*/
+
+/* Web development card style */
+.web-dev {
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  /* Adjust the positioning as per your requirements */
+  top: 70%;
+  left: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.web-dev img {
+  border-radius: 50%;
+  width: 50%; /* Adjusted to take full width of the container */
+  height: auto;
+  margin-top: 10%;
+}
+
+.profession, .name, .rating {
+  width: 100%;
+}
+
+.profession {
+  font-weight: 500;
+  color: #18202B;
+}
+
+.name {
+  font-size: small;
+  color: #707276;
+}
+
+.is-muted {
+  color: #5b6678;
+}
+
+.rating {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #707276;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .web-dev {
+    width: 80%; /* Adjusted width for smaller screens */
+    height: auto;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .web-dev img {
+    align-self: center;
+    width: 100%; /* Adjusted for smaller screens */
+    height: auto;
+    margin: 10% auto 0;
+  }
+
+  .profession, .name, .rating {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}
+/* =================================================================*/
